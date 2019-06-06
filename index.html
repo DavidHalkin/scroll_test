@@ -136,6 +136,11 @@
 			</ul>
 		</div>
 	</div>
+	<style>
+		.test{
+			text-align: justify;
+		}
+	</style>
 	<div class="test custom_scroll">
 		<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id nisi ducimus porro eius neque labore quisquam alias iusto minima modi. At perspiciatis possimus officiis accusantium doloribus tempora reprehenderit rerum, delectus?</div>
 		<div>Soluta distinctio esse maxime aliquam explicabo impedit assumenda quod nobis inventore magnam praesentium at quos iure, fuga. Earum nesciunt necessitatibus, nam molestias. Sequi ducimus, cum asperiores, quo dicta velit cumque.</div>
@@ -245,6 +250,7 @@
 		$(function() {
 			$('.custom_scroll').overlayScrollbars({ 
 				className            : "os-theme-dark",
+				paddingAbsolute: true,
 			});
 		});
 		$(document).on("click.bs.dropdown.data-api", ".noclose_js", function (e) { e.stopPropagation() });
@@ -256,5 +262,13 @@
 				});
 			});
 		</script>
+		<style>
+			.os-host-overflow-y{
+				padding-right: 15px !important;
+			}
+			.os-host-overflow-x{
+				padding-bottom: 15px !important;
+			}
+		</style>
 </body>
 </html>
